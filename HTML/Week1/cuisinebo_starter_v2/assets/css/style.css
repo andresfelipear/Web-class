@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 html, body {
@@ -18,3 +19,126 @@ html, body {
   font-weight: 300;
   overflow-x: hidden;
 }
+
+/* Header */
+
+.row{
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+header{
+  background: url("../img/hero.jpg") no-repeat center center/cover;;
+  height: 115vh;
+}
+
+nav .logo{
+  width: 50px;
+  float: left;
+  padding-top: 20px;
+}
+
+nav .main-nav{
+  float: right;
+  list-style: none;
+}
+
+nav .main-nav li{
+  float: left;
+}
+
+nav .main-nav li a {
+  display: block;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+nav .main-nav li a:hover{
+  background: #444;
+  color: #f17e0a;
+}
+
+/* Hero text box */
+.hero-text-box{
+  text-align: justify;
+  margin-top: 150px;
+  margin-left: 200px;
+  font-size: 40px;
+  color:white;
+}
+
+.hero-text-box a{
+  margin-top: 20px;
+  color:white;
+  font-size: 22px;
+  background-color: rgb(255, 138, 71);
+  display: flex;
+  width: 200px;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+
+/*section features */
+.section-features {
+  padding: 80px 0;
+  font-size: 14px;
+}
+
+.section-features .row h2{
+  text-align: center;
+  font-weight: 300;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.section-features .row .long-copy{
+  padding: 20px 180px;
+}
+
+.section-features .row .line{
+  background-color: rgb(255, 138, 71);
+  height: 1px;
+  text-align: center;
+  margin: 20px auto 0 auto;
+  width: 80px;
+}
+
+.section-features .row .ion-ios-cart-outline:before, .ion-ios-nutrition-outline:before, .ion-ios-stopwatch-outline:before{
+  font-size: 50px;
+  color: rgb(255, 138, 71);
+}
+
+.section-features .row .col{
+  padding: 3px;
+}
+
+.section-features .row .col h3{
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+/* sections-meals*/
+.section-meals img{
+  width: 25vw;
+  height: 200px;
+
+}
+
+
+.meals-showcase{
+  display: flex;
+  list-style: none;
+}
+
+.section-meals li{
+  height: 200px;
+}
+
