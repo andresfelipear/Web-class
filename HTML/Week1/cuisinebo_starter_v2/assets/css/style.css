@@ -132,7 +132,6 @@ nav .main-nav li a:hover{
 
 }
 
-
 .meals-showcase{
   display: flex;
   list-style: none;
@@ -142,3 +141,142 @@ nav .main-nav li a:hover{
   height: 200px;
 }
 
+/* Section Minamii! */
+
+.row{
+  width: 80%;
+  margin: auto;
+}
+.row h3{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.row h2{
+  position: relative;
+margin-bottom: 3rem;
+text-align: center;
+  margin-bottom: 2rem;
+}
+.row h2:before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -22px;
+  display: inline-block;
+  width: 65px;
+  height: 2px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #EC9C54;
+}
+/*location---------------------*/
+#location{
+  margin: 4rem auto;
+}
+/*testimonials------------------------*/
+.customer-review img{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+.customer-review cite{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.city-feature a{
+  color: #EC9C54;
+}
+.city-feature i{
+  color: #E47C24;
+}
+.section-testimonials{
+  margin: 4rem auto 0;
+  padding: 4rem;
+  background-image: url(..//img/back-customers.jpg), url(..//img/back-customers.jpg);
+  background-repeat: no-repeat, repeat;
+  background-size: 100%, 100%;
+  background-position:  right 0 top -60%, right 0 bottom -20%;
+  position: relative;
+  color: #fff;
+}
+.section-testimonials::after{
+  content: '';
+background-color: rgba(0,0,0,.8);
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+}
+.section-testimonials h2, .section-testimonials blockquote{
+  position: relative;
+  z-index: 1;
+}
+/*download-----------------*/
+#download{
+  background-color: #F4F4F4;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.works-step{
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.phone-img{
+  text-align: center;
+}
+.btn-app{
+  margin-right: 0.3rem;
+}
+/*form----------------------------*/
+.section-form{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-image: url(../img/logo_alpha.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+.section-form input, .section-form select, .section-form textarea{
+  width: 100%;
+}
+.section-form textarea{
+  height: 100px;
+}
+.send input{
+  background-color: #E47C24;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  width: max-content;
+  border-radius: 50px;
+  border: 1px solid #E47C24;
+}
+.section-form .row{
+  width: 70%;
+}
+/*footer---------------*/
+footer{
+  background-color: #E47C24;
+  color: #fff;
+  padding: 1rem;
+  font-size: 12px;
+}
+footer a{
+  color: #fff;
+  text-decoration: none;
+}
+footer .row ul{
+  display: flex;
+}
+footer .row ul li{
+  margin-right: 1rem;
+}
+footer p{
+  text-align: center;
+  margin: 1rem auto;
+}
+footer .row ul.social-links{
+  justify-content: flex-end;
+}
