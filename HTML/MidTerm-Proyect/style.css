@@ -1,0 +1,43 @@
+/* Header - Logo  */
+body{
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    background: url(images/background1.PNG) repeat center right;
+}
+.logo img{
+    height: 150px;
+    padding: 10px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.head{
+    display: block;
+    background-color: #FFCFDB;
+    height: 100px;
+    
+}
+/* Header - Main/menu */
+nav{
+    display: block;
+    background-color: #FFCFDB;
+    padding: 20px 0;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    text-decoration: none;
+    padding: 0 80px;
+}
