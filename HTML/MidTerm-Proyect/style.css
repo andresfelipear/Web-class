@@ -5,29 +5,24 @@ body{
 }
 
 .logo{
-    background: url(images/background1.PNG) repeat center right;
+    background: url(images/background1.PNG) repeat top right;
+    display: flex;
+    padding:  0 10vw;
 }
 .logo img{
     height: 150px;
-    padding: 10px;
     margin: auto;
-    display: block;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
 }
 
-.head{
-    display: block;
-    background-color: #FFCFDB;
-    height: 100px;
-    
-}
 /* Header - Main/menu */
 nav{
     display: block;
-    background-color: #FFCFDB;
-    padding: 20px 0;
+    background-color: #F7D0D5;
+    padding: 20px 10vw;
     color: white;
     font-size: 20px;
 }
@@ -35,9 +30,41 @@ nav{
 nav ul{
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
-nav ul li{
+nav ul li a{
     text-decoration: none;
-    padding: 0 80px;
+    color: white;
+
 }
+
+/* Header - Head */
+.head{
+    display: block;
+    background-color: #F7D0D5;
+    padding: 20px 10vw;
+    color: white;
+    font-size: 16px;
+}
+
+.head ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.head ul li{
+    text-decoration: none;
+    display: block;
+}
+
+
+.head ul li:nth-child(1){
+    display: flex;
+}
+
+.head strong{
+    font-size: 18px;
+}
+      
+
