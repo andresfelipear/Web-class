@@ -20,7 +20,7 @@ body{
 .logo{
     background: url(images/background1.PNG) repeat top right;
     display: flex;
-    padding:  0 10vw;
+    padding:  3px 10vw;
 }
 .logo img{
     height: 150px;
