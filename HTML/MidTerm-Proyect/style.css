@@ -7,6 +7,10 @@
     background-color: #905960;
 }
 
+:root{
+	--maincolor:#905960;
+}
+
 /* Header - Logo  */
 body{
     margin: auto;
@@ -105,6 +109,10 @@ footer .section1 {
     display: flex;
     padding:  20px 10vw;
     justify-content: center;
+}
+
+footer .section1 img{
+    width: 100%;
 }
 
 /* Footer - section2 */
@@ -206,8 +214,216 @@ main .favorite-products .breakfasts .breakfast a{
     color:#905960;
 }
 
+
+
+/*Section: Delivery-Policy */
+
+main .delivery-policy{
+    padding: 0px 10vw;
+}
+main .delivery-policy h1{
+    text-align: center;
+}
+
+main .delivery-policy ul{
+    list-style: none;
+}
+
+main .delivery-policy ul li{
+    padding: 5px 0px;
+}
+
+.main-policy{
+    padding: 20px 0 60px 0;
+}
+
+main .delivery-policy ul div{
+    display: flex;
+    align-items: center;
+}
+
+main .delivery-policy img{
+    background-color: #C69EA3;
+    margin-right: 10px;
+}
+
+/* Breakfast Menu */
+
+main .favorite-products .next-page{
+    margin: 60px 0;
+}
+main .favorite-products .next-page ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+main .favorite-products .next-page ul li a{
+    margin-right: 10px;
+    padding: 15px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+main .favorite-products .next-page ul li a:hover{
+    background-color: black;
+    color: white;
+}
+
+main .favorite-products .next-page ul .active a{
+    background-color: black;
+    color: white;
+}
+
+/* Contact Page */
+
+.mainContact{
+    padding: 0 10vw;
+    margin: 60px 0;
+
+}
+.form{
+	width: 30vw;
+    margin: auto;
+	background-color: white;
+	text-align: center;
+	border: 2px solid var(--maincolor);
+	border-radius: 10px;
+	color: var(--maincolor);
+}
+
+form{
+	padding: 40px 20px;
+}
+
+
+.form input, textarea{
+	border: 2px solid #AB7C82;
+    background: white;
+	border-radius: 10px;
+	padding: 0px 10px;
+	font-family: sans-serif;
+	font-size: 14px;
+	width: 80%;
+	color: var(--maincolor);
+}
+
+.form input:hover, textarea:hover{
+	border: 2px solid var(--maincolor);
+}
+
+.form input::placeholder, textarea::placeholder{
+	font-size: 12px;
+	color: var(--maincolor);
+	font-weight: bold;
+}
+.form input:focus, textarea:focus{
+	outline:none !important;
+	border: 2px solid var(--maincolor);
+	box-shadow: 0 0 10px #E1C0C4;
+	background: #FBE2E5;
+    color:var(--maincolor);
+}
+.form .inputText{
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+.form h1{
+	margin-bottom: 40px;
+}
+
+.form textarea{
+	height: 100px;
+	padding: 10px;
+}
+
+
+.form .send{
+	background-color: #FBE2E5;
+	height: 40px;
+	width: 100px;
+	border-radius: 14px;
+	border: 1px solid var(--maincolor);
+	font-weight: bold;
+	font-style: italic;
+	font-size: 15px;
+	cursor: pointer;
+	margin-top: 20px;
+	color: var(--maincolor);
+}
+
+.form .send:hover{
+	border: 2px solid var(--maincolor);
+	letter-spacing: 1px;
+
+}
+
+
+/*Page-Details Breakfast */
+.main-details{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 10vw;
+    align-items: center;
+}
+
+.main-details .img img{
+    height: 600px;
+}
+.main-details .details-breakfast{
+    display: block;
+    padding: 0 0 0 20px;
+}
+.main-details .details-breakfast h1{
+    margin: 0;
+    font-size: 30px;
+    font-style: italic;
+}
+.main-details .details-breakfast ul{
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.main-details .details-breakfast div h1{
+    padding: 20px 0;
+}
+
+.main-details .details-breakfast div input{
+    border: 1px solid var(--maincolor);
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+    width: 30px;
+}
+
+.main-details .details-breakfast div button{
+    color: white;
+    background-color: var(--maincolor);
+    height: 30px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.main-details .details-breakfast ul .list-details{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.main-details .details-breakfast ul .list-details img{
+    background-color: #C69EA3;
+    margin-right: 10px;
+}
+
+
 /*Responsive Design */
-@media (max-width: 500px) {
+
+/* Smartphones */
+@media (max-width: 1024px) {
     /* Header - Main/menu */
     nav ul{
         flex-flow: column;
@@ -233,7 +449,7 @@ main .favorite-products .breakfasts .breakfast a{
         padding: 10px 0;
     }
 
-    .head ul li:nth-child(2), li:nth-child(3){
+    .head ul li:nth-child(2),  .head ul li:nth-child(3){
         text-align: center;
         font-size: 14px;
     }
@@ -241,10 +457,6 @@ main .favorite-products .breakfasts .breakfast a{
     /* Footer - section2 */
     footer .section1 {
         font-size: 25px;
-    }
-
-    footer .section1 img{
-        width: 100%;
     }
 
     footer .section2 {
@@ -261,10 +473,54 @@ main .favorite-products .breakfasts .breakfast a{
         text-align: center;
     }
 
+    /* Main */
+    main .favorite-products .breakfasts{
+        justify-content: center
+        
+    }
 
-
-
-
-
+    /*Pages- details-breakfast */
+    .main-details{
+        flex-flow: column wrap;
+        padding: 0px 10vw ;
+    }
     
+    .main-details .img img{
+        width: 60vw;
+        height: auto;
+        margin-top: 30px;
+        max-height: 600px;
+        max-width: 350px;
+    }
+    .main-details .details-breakfast{
+        display: block;
+    }
+    .main-details .details-breakfast h1{
+        text-align: center;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    .main-details .details-breakfast div h1{
+        margin:0;
+    }
+
+    .main-details .details-breakfast .cart{
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* Contact Page */
+
+    .form{
+        width: 70vw;
+    }
+
+    .form input, textarea{
+        display: block;
+        margin: auto;
+    }
+        
+
 }
