@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Columns</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 200px auto; */
+            /* grid-template-columns: auto auto auto; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 100px);
+            /* gap: 1rem 5rem; */ /* row-gap column-gap */
+            gap: 1rem; /* row-gap AND column-gap */
+
+        }
+
+
+        .item{
+            padding: 3rem;
+            background-color: #f4f4f4;
+            border: 1px solid #333;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 1rem;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <br><br>
+
+    <main>
+        <section>
+            <h3>Welcome to my page</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quisquam accusantium, qui ducimus esse non iste autem corporis reiciendis dolores?</p>
+        </section>
+        <aside>
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Some company name</li>
+                <li>816 Granville</li>
+                <li>555-555-5555</li>
+            </ul>
+        </aside>
+
+    </main>
+</body>
+</html>
