@@ -1,0 +1,16 @@
+git chechout -b b2
+create the branch and change to that branch
+
+git branch b1
+just create the branch
+
+git commit -am "comment"
+can use this command for add add a file and comment at the same time.
+must be a track file
+
+git merge b2
+merge branch to into the current branch
+
+
+
+https://www.canva.com/design/DAEnWGu4KJQ/VqsAKkp9KLdqoxd-D7GvYw/view?utm_content=DAEnWGu4KJQ&utm_campaign=designshare&utm_medium=link&utm_source=viewer
