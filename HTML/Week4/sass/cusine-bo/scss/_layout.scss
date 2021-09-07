@@ -1,0 +1,179 @@
+// navbar, section, footer
+
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../images/bg.jpeg) no-repeat center center/cover;  
+    display: block;
+    text-align: center;
+    padding: 60px 0;
+    .brand{
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        letter-spacing: 2px;
+        
+
+    }
+    .header-banner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.about-us{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    .about-us-left{
+        position: relative;
+        left:-200px;
+        width: 40%;
+        img{
+            width: 100%;
+        }
+    }
+    .about-us-right{
+        padding: 0 100px;
+        width: 60%;
+        opacity: 0.7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .stars{
+            margin: 30px 0;
+            i{
+                color: $color-secondary;
+                font-size:15px;
+                margin-left: 10px;
+            }
+        }
+        .description{
+            font-size: $font-sm;
+            font-style: italic;
+            text-align: justify;
+            &:first-letter{
+                padding-left: 50px;
+            }
+            
+        }
+    }
+
+}
+
+.gallery .cards-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    .card{
+        width: 33.3333%;
+        position: relative;
+        height: 30vw;
+        overflow: hidden;
+        .card-img{
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            object-fit: cover;
+            
+        }
+        &:hover .card-overlay {
+            left: 0; 
+        }
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            background-color: rgba(211, 171, 85, 0.6);
+            color: #fff;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: left 0.7s; 
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: capitalize;
+            width: 100%;
+            height: 100%;
+
+            .card-overlay-heading{
+                font-family: "Nunito", sans-serif;
+                font-size: $font-md;
+                font-weight: 300;
+                
+            }
+            
+            .card-overlay-paragraph{
+                font-size: $font-sm*1.3;
+                margin-bottom: 30px;
+            }
+
+            .card-overlay-btn{
+                width: 150px;
+                height: 40px;
+                color: $color-secondary;
+                background-color: $color-primary;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                border: 1px solid $color-secondary;
+                border-radius: 30px;
+                outline: none;
+                cursor: pointer; 
+            }
+        }
+
+
+
+
+    }
+}
+
+.footer{
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .footer-header{
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        letter-spacing: 2px;
+    }
+
+    .footer-social-media .social-media{
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+        margin: 70px 0;
+        .social-media-item{
+            list-style: none;
+            .social-media-link{
+                font-size: 50px;
+                color: #bbb;
+                transition: color .7s;
+                &:hover i{
+                    color:$color-secondary
+                } 
+            }
+        }
+
+        
+    }
+
+    .footer-copyright{
+        font-size:$font-sm;
+    }
+}
