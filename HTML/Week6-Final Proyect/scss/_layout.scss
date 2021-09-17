@@ -1,0 +1,167 @@
+// navbar, section, footer
+
+@mixin displayFlexRow($content) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: $content;
+}
+
+@mixin displayFlexColumn($content) {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    gap: 10px;
+    justify-content: $content;
+    margin: 10px;
+}
+
+//Header - logo
+header{
+    display: block;
+    .head{
+        background-color:$color-secondary;
+        color: $color-primary;
+        padding: 40px 0;
+        text-align: center;
+        h1{
+            text-transform: uppercase;
+            margin: auto;
+            font-size: $font-lg;
+            @media only screen and (max-width: 850px) {
+                font-size: $font-md;
+            }
+            width: auto;
+        }
+        p{
+            margin: auto;
+            text-align: right;
+            width: $logo-lg-width;
+            @media only screen and (max-width: 850px) {
+                width: $logo-md-width;
+            }
+            font-style: italic;
+        }
+        .line{
+            margin: auto;
+            border-bottom: 1px solid $color-primary;
+            width: 50vw;
+            margin-top: 10px;
+        }
+    }
+
+    nav{
+        background-color: $color-secondary;
+        color: $color-primary;
+        padding: 10px 60px;
+        margin-top: 20px;
+        display: block;
+        ul{
+            list-style: none;
+            padding: 0;
+            @include displayFlexRow(space-between);
+
+            @media only screen and (max-width: 768px) {
+                @include displayFlexColumn(space-between);
+            }
+            li a{
+                text-decoration: none;
+                color: $color-primary;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+//Main - header
+main{
+    display: block;
+    @media only screen and (min-width: 1700px) {
+        padding: 0 130px;
+    }
+    padding: 0 20px;
+    margin-bottom: 30px;
+    .main-header{
+        display: block;
+        text-align: center;
+        p{
+            font-style: italic;
+            color:$color-secondary;
+            margin: auto;
+            width: 60vw;
+            font-size: $font-sm;
+            margin-top: 60px;
+            @media only screen and (max-width: 425px) {
+                margin-top: 20px;
+                font-size: $font-ssm;
+                width: auto;
+            }
+        }
+    }
+
+    .sections{
+        margin-top: 80px;
+        gap:80px;
+        @media only screen and (max-width: 768px) {
+            margin-top: 60px;
+            gap: 20px;
+        }
+        @media only screen and (max-width: 425px) {
+            margin-top: 20px;
+            gap: 20px;
+        }
+        @include displayFlexRow(center);
+        .section{
+            img{
+                width: 350px;
+                height: 350px;
+                transition: width 1s, filter 1s;
+                border-radius: 10px;
+                &:hover{
+                    cursor: pointer;
+                    filter: saturate(2);
+                    width: 360px;
+                }
+            }
+            h4{
+                text-align: center;
+                text-transform: uppercase;
+                font-style: normal;
+                
+
+            }
+        }
+        
+    }
+}
+
+//Footer
+footer{
+    padding: 30px 60px;
+    background-color: $color-secondary;
+    color: $color-primary;
+    @include displayFlexRow(space-evenly);
+    @media only screen and (max-width: 768px) {
+        @include displayFlexColumn(space-between);
+        padding: 30px 20px;
+    }
+    .section1{
+        width: 30vw;
+        @media only screen and (max-width: 768px) {
+            width: auto;
+        }
+        
+    }
+}
+
+//Footer-Sign
+.author{
+    background-color: $color-third;
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px 20px;
+    font-style: italic;
+    font-family: "Roboto",sans-serif;
+    font-size: 14.4px;
+}
