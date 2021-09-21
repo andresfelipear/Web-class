@@ -7,8 +7,9 @@ form.addEventListener('submit', function(e){
     console.log(textNote.value);
     const newElement = document.querySelector("ul li:first-child").cloneNode(true);
     list.appendChild(newElement);
+    const elementInserted = document.querySelector("ul li:last-child p:first-child");
+    elementInserted.innerHTML =  textNote.value;
     e.preventDefault();
-
 })
 
 
