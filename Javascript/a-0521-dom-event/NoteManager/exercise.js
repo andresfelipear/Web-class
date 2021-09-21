@@ -9,6 +9,7 @@ form.addEventListener('submit', function(e){
     list.appendChild(newElement);
     const elementInserted = document.querySelector("ul li:last-child p:first-child");
     elementInserted.innerHTML =  textNote.value;
+    document.getElementById('add-input').value = null;
     e.preventDefault();
 })
 
