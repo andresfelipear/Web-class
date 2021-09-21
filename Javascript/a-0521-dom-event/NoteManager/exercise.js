@@ -1,6 +1,20 @@
 //solution goes here....
-const btn = document.getElementById('add-btn');
-btn.addEventListener('click', function(){
+const form = document.getElementById('add');
+const textNote = document.getElementById('add-input');
+const list = document.getElementById('list');
+form.addEventListener('submit', function(e){
     console.log("first try ok!");
-    alert("hgola");
+    console.log(textNote.value);
+    const newElement = document.querySelector("ul li:first-child").cloneNode(true);
+    list.appendChild(newElement);
+    e.preventDefault();
+
 })
+
+
+
+
+
+
+
+
