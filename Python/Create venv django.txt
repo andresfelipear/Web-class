@@ -1,0 +1,141 @@
+Setup Django w/ virtual env
+
+
+
+
+Update pip
+
+python3 -m pip install —upgrade pip
+
+
+
+
+Install virtualenv with pip
+
+pip install virtualenv
+
+pip3 install virtualenv
+
+
+
+
+Create directory and navigate to a folder of your liking, then create a virtual environment
+
+python3 -m venv blog && cd blog
+
+(alt: virtualenv -p python3 blog && cd blog)
+
+
+
+
+Activate the virtual environment
+
+source bin/activate (mac/linux)
+
+.\Scripts\activate (windows)
+
+
+
+
+[Side note: to leave virtualenv:  deactivate]
+
+
+
+
+Create a folder for our django source code
+
+mkdir src && cd src
+
+
+
+
+Check if any modules are installed
+
+pip freeze
+
+
+
+
+Install django
+
+pip install django
+
+
+
+
+Confirm that django is installed
+
+pip freeze
+
+Django==(some version number should appear)
+
+
+
+
+Start a project on the root (/src)
+
+django-admin.py startproject blogproject .
+
+(the period (.) will build the core files in the dir where we are currently at (which is /src)
+
+
+
+
+Run these pre-requisite commands
+
+
+
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+example:
+
+user:admin
+
+email:empty
+
+pass:admin
+
+confirm pass:admin
+
+
+
+
+
+
+
+python manage.py runserver
+
+
+
+
+Start a blog objects application
+
+python3 manage.py startapp blog
+
+
+
+
+
+
+
+Core Files
+
+Init.py > don’t touch
+
+Settings.py > base dir, secret key, middleware, db
+
+Url.py > routing, url
+
+
+
+
+After changing a Model (Post)
+
+Run:
+
+python manage.py makemigrations
+
+python manage.py migrate
